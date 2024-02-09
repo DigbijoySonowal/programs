@@ -1,0 +1,40 @@
+<!-- Create a small form for Job Application. It should have 5 fields – name, age, education, address and expected salary.
+These 5 fields should have HTML controls where user enter his/her information, there should be a button which on
+clicking shown the user information on a div controls. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="3.css">
+    <script src="3.js"></script>
+</head>
+<body>
+    <div>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="age">Age:</label><br>
+            <input type="number" name="age" id="age" min="1"><br><br>
+            <label for="education">Education:</label><br>
+            <select name="education" id="education">
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="Diploma">Diploma</option>
+                <option value="UG">UG</option>
+                <option value="PG">PG</option>
+            </select><br><br>
+            <label for="address">Address:</label><br>
+            <input type="text" name="address" id="address"><br><br>
+            <label for="salary">Salary:</label><br>
+            <input type="number" name="salary" id="salary" min="0"><br><br>
+            <button type="button" onclick="myfunction()">Submit</button><br><br>   
+        </form>
+    </div>
+    <div>
+        <p id="demo"></p>
+    </div>
+</body>
+</html>
